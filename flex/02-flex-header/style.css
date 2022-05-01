@@ -2,6 +2,12 @@
   font-family: monospace;
   background: papayawhip;
 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border: solid blue; 
+
   padding: 8px;
   display: flex;
   align-items: center;
@@ -20,14 +26,18 @@ ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
 
-  display: flex;
+  display:flex;
   gap: 8px;
-
   margin: 0;
   padding: 0;
 
-  border: solid purple;
+  border: solid purple; 
 }
+
+/* if we wanted to use margin instead of gap
+/* li {
+  margin: 8px;
+} */
 
 a {
   font-size: 22px;
