@@ -29,18 +29,69 @@ body {
 
 /* My Solution */
 body {
-  /* flex: 1 1 auto; */
   display: flex;
   flex-direction: column;
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 16px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 
 .content {
   display: flex;
   flex: 1 1 auto;
 }
 
-.sidebar {
+.container {
   display: flex;
-  flex: 1 0 auto;
+  flex-wrap: wrap;
+
+  padding: 32px;
 }
 
+.sidebar {
+  flex-shrink: 0;
+  padding: 16px;
+}
+
+/* .header {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 32px;
+  font-weight: bold;
+} */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  padding: 16px;
+  margin: 16px;
+  width: 300px;
+}
